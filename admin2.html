@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Irem Uzman | Kişisel Portföy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Irem Uzman</h1>
+      <nav>
+        <a href="index.html">Anasayfa</a> |
+        <a href="hakkimda.html">Ben Kimim</a> |
+        <a href="projelerim.html">Projeler</a> |
+        <a href="iletisim.html">Bana Ulaş</a> |
+        <a href="admin2.html">Yönetici Paneli</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Yönetici Paneli</h2>
+
+      <!-- GİRİŞ FORMU -->
+      <form action="kontrol.php" method="POST">
+        <label for="kullanici">Kullanıcı Adı:</label><br>
+        <input type="text" id="kullanici" name="kullanici" required><br><br>
+
+        <label for="sifre">Şifre:</label><br>
+        <input type="password" id="sifre" name="sifre" required><br><br>
+
+        <button type="submit">Giriş Yap</button>
+      </form>
+
+      <hr><br>
+
+      <!-- PROJE FORMU -->
+      <form action="proje_kaydet.php" method="POST">
+        <label>Proje Başlığı:</label><br>
+        <input type="text" name="baslik"><br><br>
+
+        <label>Proje Açıklaması:</label><br>
+        <textarea rows="5" cols="30" name="aciklama"></textarea><br><br>
+
+        <button type="submit">Kaydet</button>
+      </form>
+    </main>
+  </body>
+</html>
